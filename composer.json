@@ -1,0 +1,35 @@
+{
+    "name": "mustafagenc/login-with-captcha",
+    "description": "laravel-admin login with captcha",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension", "login-with-captcha"],
+    "homepage": "https://github.com/mustafagenc/login-with-captcha",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mustafagenc",
+            "email": "mustafa@ekipisi.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6",
+        "mews/captcha": "^2.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Encore\\LoginCaptcha\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Encore\\LoginCaptcha\\LoginCaptchaServiceProvider"
+            ]
+
+        }
+    }
+}
